@@ -1,4 +1,4 @@
-# shadowsocks_docker_service（一键部署）
+# shadowsocks_docker_service（一键部署shadowsocks）
 - auto restart
 - one key deployment
 - modify `config.jon` to your preference
