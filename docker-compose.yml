@@ -1,0 +1,9 @@
+version: '2'
+services:
+  ss:
+    image: ss
+    command: /usr/local/bin/ssserver -c /etc/shadowsocks.json
+    ports:
+      - 1989:1989
+    restart: always
+
