@@ -4,7 +4,7 @@
 - modify `config.jon` to your preference
 
 ## Dependency
-- Install `docker` and `docker-compose` before running `make`
+- Run `sh install_docker.sh` to install `docker` and `docker-compose` before running `make`
 
 ## Config
 This is the default configuration. Modify config.json before running `make`
