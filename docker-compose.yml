@@ -1,9 +1,18 @@
-version: '2'
+version: '3'
 services:
-  ss:
-    image: ss
+  shadowsocks:
+    image: ihanhai.cn:5000/bachashu/shadowsocks
     command: /usr/local/bin/ssserver -c /etc/shadowsocks.json
     ports:
       - 1989:1989
-    restart: always
+    dns:
+        - 114.114.114.114
+        - 100.125.1.250
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.labels.role == worker
+      restart_policy:
+        condition: any
 
